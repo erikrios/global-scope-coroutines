@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         GlobalScope.launch {
-            Log.d(TAG, "Coroutines says hello from THREAD ${Thread.currentThread().name}")
+            Log.d(TAG, "Coroutines says hello from Thread ${Thread.currentThread().name}")
         }
 
         Log.d(TAG, "Hello from thread ${Thread.currentThread().name}")
